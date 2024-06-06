@@ -1,0 +1,327 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+}
+
+/* ---------------------------- */
+
+
+#main{
+    display: flex;
+    /* justify-content: space-between; */
+    padding: 0 5%;
+    padding-top: 7%;
+    position: relative;
+}
+
+.left-part{
+    height: 85vh;
+    width: 40vw;
+    /* background-color: aquamarine; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.left-part h1{
+    font-size: 7vw;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    line-height: 14vh;
+}
+
+.bottom-left{
+    height: 40%;
+    width: 100%;
+    /* background-color: blanchedalmond; */
+}
+
+.color {
+    /* background-color: blue; */
+    width: fit-content;
+    padding: 2px 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    border: 1px solid #000;
+}
+
+.color h5 {
+    font-size: 18px;
+    margin-right: 10px;
+    font-weight: 500;
+}
+
+.color1 {
+    height: 18px;
+    width: 18px;
+    background-color: rgb(185, 136, 75);
+    border-radius: 50%;
+    margin: 3px;
+}
+
+.color2 {
+    height: 18px;
+    width: 18px;
+    background-color: rgb(140, 39, 39);
+    border-radius: 50%;
+
+}
+
+.bottom-left h3{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 540;
+    margin-top: 8%;
+}
+
+.bottom-left p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.1vw;
+    line-height: 1.5;
+    width: 75%;
+    margin-top: 2%;
+}
+
+/* ------------------------------------------*/
+
+.right-part{
+    height: 76vh;
+    width: 30vw;
+    /* background-color: rgb(142, 186, 38); */
+    margin-top: 8vh;
+    margin-left: 5vw;
+}
+
+.right-top-text{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: antiquewhite; */
+    padding: 3% 0;
+}
+
+.right-top-text h4{
+    font-weight: 600;
+}
+
+.right-top-text h5{
+    font-size: 0.6rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+}
+
+.right-top-text i{
+    color: goldenrod;
+}
+
+.circle{
+    position: absolute;
+    height: 15vh;
+    width: 7vw;
+    background-color: rgb(31, 15, 49);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    right: 15.5%;
+    top: 40%;
+}
+
+.circle h4{
+    color: white;
+    font-weight: 200;
+    font-family: system-ui, 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.rotated-text{
+    font-size: 25px;
+    font-weight: 500;
+    font-family: Arial, Helvetica, sans-serif;
+
+    position: absolute;
+    transform-origin: 0 0;
+    rotate: -90deg;
+    left: 46%;
+    bottom: 0%;
+}
+
+.right-part img {
+    width: 100%;
+    height: 92%;
+    object-fit: cover;
+}
+
+
+/*----------------------------  media  -----------------------------*/
+
+@media (max-width:600px) {
+    #main {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        flex-direction: column;
+        padding: 40px;
+        padding-top: 30px;
+        /* gap:50px; */
+    }
+
+    .left-part {
+        height: fit-content;
+        width: 100%;
+        /* background-color: red; */
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        /* padding-bottom: 50px; */
+
+        gap: 50px;
+    }
+
+
+    .left-part h1 {
+        /* font-size: 145px; */
+        font-size: 18vw;
+        font-weight: 500;
+        /* line-height: 150px; */
+        line-height: 17vw;
+        font-family: work sans;
+    }
+
+    .bottom-left {
+        /* height: 40%; */
+        width: 100%;
+        /* background-color: yellow; */
+    }
+
+    .color {
+        /* background-color: blue; */
+        width: fit-content;
+        padding: 9px 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50px;
+        border: 1px solid #000;
+    }
+
+    .color h5 {
+        font-size: 13px;
+        margin-right: 5px;
+        font-weight: 500;
+    }
+
+    .color1 {
+        height: 12px;
+        width: 12px;
+        background-color: burlywood;
+        border-radius: 50%;
+        margin: 3px;
+    }
+
+    .color2 {
+        height: 12px;
+        width: 12px;
+        background-color: brown;
+        border-radius: 50%;
+
+    }
+
+    .left-part h2 {
+        margin-top: 20px;
+        /* font-size: 30px; */
+        font-size: 3vw;
+        margin-bottom: 8px;
+    }
+
+    .left-part p {
+        /* font-size: 20px; */
+        font-size: 2.3vw;
+        width: 80%;
+        font-weight: 600;
+        color: #444;
+        line-height: 2.6vw;
+    }
+
+    .right-part {
+        height: 50%;
+        width: 100%;
+        top: 0;
+        /* background-color: rgb(0, 140, 255); */
+        position: relative;
+        display: flex;
+        flex-direction: column-reverse;
+        
+    }
+
+    .right-top-text {
+        height: 60px;
+        width: 100%;
+        /* background-color: red; */
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-right: 0px;
+    }
+
+    .right-top h4 {
+        font-size: 26px;
+        font-weight: 600;
+        font-family: work sans;
+    }
+
+    .right-top h5 {
+        font-size: 14px;
+    }
+
+    .right-top h5 i {
+        color: gold;
+    }
+
+    .right-part img {
+        width: 100%;
+        height: 88%;
+        object-fit: cover;
+        border-radius: 5px;
+    }
+
+    .circle {
+        position: absolute;
+        height: 80px;
+        width: 80px;
+        background-color: rgb(26, 26, 26);
+        color: #fff;
+        border-radius: 50%;
+        right: -10%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        top: -10%;
+        
+    }
+
+    .circle h5 {
+        font-size: 14px;
+        font-weight: 400;
+    }
+
+    .rotated-text {
+        position: absolute;
+        left: -15%;
+        /* background-color: red; */
+        bottom: 12%;
+        rotate: -90deg;
+        transform-origin: 0 0;
+        font-size: 20px;
+        font-weight: 600;
+    }
+
+}
